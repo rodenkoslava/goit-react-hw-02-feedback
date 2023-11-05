@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { ContainerButtons, Button } from './styledFeedbackOptions';
 
-const FeedbackOptions = ({ data, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ data, onLeaveFeedback }) => {
   const buttonsName = Object.keys(data);
 
   return (
@@ -21,14 +20,3 @@ const FeedbackOptions = ({ data, onLeaveFeedback }) => {
     </ContainerButtons>
   );
 };
-
-FeedbackOptions.propTypes = {
-  onLeaveFeedback: PropTypes.func.isRequired,
-  data: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-  }).isRequired,
-};
-
-export default FeedbackOptions;

@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
-import Section from '../components/Section/styledSection';
-import FeedbackOptions from '../components/FeedbackOptions/FeedbackOptions';
-import Notification from '../components/Notification/Notification';
-import Statistics from '../components/Statistics/Statistics';
+import { Section } from '../components/Section/Section';
+import { FeedbackOptions } from '../components/FeedbackOptions/FeedbackOptions';
+import { Notification } from '../components/Notification/Notification';
+import { Statistics } from '../components/Statistics/Statistics';
 
 import { ContainerApp } from './styledContainer';
 
@@ -63,5 +63,3 @@ export class Container extends Component {
     );
   }
 }
-
-export default Container;

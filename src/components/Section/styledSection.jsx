@@ -10,5 +10,3 @@ export const ContainerTitle = styled.h1`
   font-weight: 600;
   margin-top: 0px;
 `;
-
-export default Container;

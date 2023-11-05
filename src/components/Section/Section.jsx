@@ -1,9 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { Container, ContainerTitle } from './styledSection';
 
-import { Container, ContainerTitle } from './styldSection';
-
-const Section = ({ title, children }) => {
+export const Section = ({ title, children }) => {
   return (
     <Container>
       <ContainerTitle>{title}</ContainerTitle>
@@ -11,10 +8,3 @@ const Section = ({ title, children }) => {
     </Container>
   );
 };
-
-Section.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
-};
-
-export default Section;
